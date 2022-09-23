@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div>Clique em mim</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]; // atribuindo o valor à variável p1. p1 é o parágrafo 2 [1] (já que a contagem começa no 0 zero, ou seja, o primeiro parágrafo é 0, o segundo é 1, e assim por diante.). getElementsBy NameTag é o comando para selecionar elementos pela tag name, no caso, o 'p' (parágrafo).
+        window.document.write(p1.innerText); // depois de atribuírmos um valor à variável, podemos dar um comando utilizando ela. No caso: escreva (write) no documento (documento atual) que está dentro de window, o texto que está dentro (innerText) de p1 (valor da variável).
+
+        var d = window.document.querySelector('p');
+        d.style.background = 'blue';
+    </script>
 </body>
 </html>
