@@ -25,13 +25,18 @@
 
     <script>
         var a = window.document.getElementById('area')
-        
+        a.addEventListener('mouseout', sair) /*Essa é outra forma de adicionar eventos: utilizando listeners ao invés de inserir propriedades no HTML. O listener é inserido diremante no script (JavaScript)*/
+
         function clicar() {
             a.innerText = 'Clicou'
-        }
+        } // referente à propriedade onclick da div.
 
         function entrar() {
             a.innerText = 'Entrou'
+        } // referente à propriedade onmouseenter da div
+
+        function sair() {
+            a.innerText = 'Saiu'
         }
     </script>
 </body>
