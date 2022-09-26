@@ -26,10 +26,17 @@
             border-radius: 10px;
             padding: 20px;
             width: 500px;
-            margin: auto;
+            margin: auto; /*centraliza a section*/
             border: 1px solid rgba(0, 0, 0, 0.613);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+        }
 
+        div {
+            text-align: center;
+        }
+
+        div#foto {
+            padding: 20px;
         }
 
         footer {
@@ -40,16 +47,16 @@
 
     </style>
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        <h1>Título</h1>
+        <h1>Hora do dia</h1>
         <section>
-            <div>
-                <img src="" alt="manhã">
+            <div id="msg">
+                
             </div>
 
-            <div>
-
+            <div id="foto">
+                <img id="imagem" src="imagens/manha.png" alt="manhã">
             </div>
         </section>
     </header>
