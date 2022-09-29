@@ -16,17 +16,23 @@
     <section>
         <div>
             <form action="cadastro_idade.php" method="get">
-                <p>Data de nascimento: <input type="date" name="nasc" id="inasc"></p>
-                <p>Sexo: <input type="checkbox" name="masc" id="imasc">Masculino <input type="checkbox" name="fem" id="ifem"> Feminino</p>
-                <input type="submit" value="Verificar" onload="carregar()">
+                <p>Data de nascimento: 
+                    <input type="number" name="nasc" id="inasc">
+                </p>
+                <p>Sexo: 
+                    <input type="radio" name="radsex" id="masc">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p>
+                    <input type="submit" value="Verificar" onclick="verificar()">
+                </p>
             </form>
+        </div>
+        <div id="res">
             <p>Preencha os dados acima para ver o resultado.</p>
         </div>
-    </section>
-
-    <div>
-        <img src="" alt="">
-    </div>
 
     <footer>
         <p>&copy; CursoemVídeo</p>
